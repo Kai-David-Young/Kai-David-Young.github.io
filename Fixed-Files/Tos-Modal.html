@@ -1,0 +1,73 @@
+
+<!-- The Modal -->
+<div id="myModal" class="modal"  class="normal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <!-- <span class="close">&times;</span> -->
+    <script> console.log("TOS MODAL LOADED")</script>
+    <img
+      src="/images/shrunk-Grey-KaiYoung.png"
+      width="230.5"
+      height="74.5"
+      alt="DarkGrey Logo"
+      style="
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        height: 100%;
+      "
+    />
+    <br />
+    <hr class="rounded" />
+    <br />
+    <p style="color: red; font-size: 20px"
+      >CLICK ON THE TABS TO SEE THE INFORMATION</p
+    >
+    <hr class="rounded" />
+    <div id="PolicyLnk" class="parent">
+      <div class="child">
+        <input
+          type="button"
+          onclick="window.open('https://fileserver.kweb-tech.infinityfreeapp.com/Legal/Terms%20and%20Conditions/English%20copy%20of%20TandCs.pdf?', '_blank');"
+          value="Terms and Conditions"
+        />
+        <div class="child">
+          <input
+            type="button"
+            onclick="window.open('https://fileserver.kweb-tech.infinityfreeapp.com/Legal/Policies/Privacy%20Policy.pdf', '_blank');"
+            value="Privacy Policy"
+          />
+          <div class="child">
+            <input
+              type="button"
+              onclick="window.open('https://fileserver.kweb-tech.infinityfreeapp.com/Legal/Policies/Cookie%20Policy.pdf', '_blank');"
+              value="Cookie Policy"
+            />
+          </div>
+        </div>
+        <h2 style="color: black; font-size: 28px">GDPR - Terms of Service</h2>
+        <p style="color: black; font-size: 16px">
+          At kai-young.rf.gd we understand that we have a responsibility to
+          protect and respect your privacy and look after your personal
+          data.This Privacy Notice, inclusive of our General Terms of Service,
+          explains what personal data we collect, how we use personal data,
+          reasons we may disclose personal data to others and how we go about
+          storing your personal data securely. This Privacy Notice applies to
+          jurisdictions under EU and UK GDPR</p
+        >
+
+        <div></div>
+        <button
+          id="closemodule"
+          class="right"
+          type="submit"
+          onclick="AcceptTos()"
+          >Accept</button
+        >
+      </div>
+    </div>
+  </div></div
+>
+<script defer src="Modal.js"></script>
+<link rel="stylesheet" href="Modal.css" />

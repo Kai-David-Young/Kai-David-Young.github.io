@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("./Fixed Files/Head.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
+    <div id="head"></div>
+    <script type="text/javascript">
+(function() {
+    window.sib = {
+        equeue: [],
+        client_key: "m2f9jmi6q46ekqlcidom859b"
+    };
+    /* OPTIONAL: email for identify request*/
+    // window.sib.email_id = 'example@domain.com';
+    window.sendinblue = {};
+    for (var j = ['track', 'identify', 'trackLink', 'page'], i = 0; i < j.length; i++) {
+    (function(k) {
+        window.sendinblue[k] = function() {
+            var arg = Array.prototype.slice.call(arguments);
+            (window.sib[k] || function() {
+                    var t = {};
+                    t[k] = arg;
+                    window.sib.equeue.push(t);
+                })(arg[0], arg[1], arg[2], arg[3]);
+            };
+        })(j[i]);
+    }
+    var n = document.createElement("script"),
+        i = document.getElementsByTagName("script")[0];
+    n.type = "text/javascript", n.id = "sendinblue-js", n.async = !0, n.src = "https://sibautomation.com/sa.js?key=" + window.sib.client_key, i.parentNode.insertBefore(n, i), window.sendinblue.page();
+})();
+</script>
+    <link rel="stylesheet" href="KWEBGeneric.css">
+    <script>
+      !(function () {
+        const e = document.createElement("script");
+        (e.type = "text/javascript"),
+          (e.src =
+            "https://global.ketchcdn.com/web/v2/config/kweb_technology_and_services/kweb_exp1/boot.js"),
+          (e.defer = e.async = !0),
+          document.getElementsByTagName("head")[0].appendChild(e),
+          (window.semaphore = window.semaphore || []);
+      })();
+    </script>
+    <script>function removeHash () { 
+    var scrollV, scrollH, loc = window.location;
+    if ("pushState" in history)
+        history.pushState("", document.title, loc.pathname + loc.search);
+    else {
+        // Prevent scrolling by storing the page's current scroll offset
+        scrollV = document.body.scrollTop;
+        scrollH = document.body.scrollLeft;
+
+        loc.hash = "";
+
+        // Restore the scroll offset, should be flicker free
+        document.body.scrollTop = scrollV;
+        document.body.scrollLeft = scrollH;
+    }
+}</script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> KYoung: Home &copy; </title>
+    <style>
+      body {
+        color: white;
+      }
+    </style>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  </head>
+
+  <body style="background-color: rgb(0, 0, 0)">
+        <div id="header"></div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    
+  </body>
+  <footer>
+    <br />
+    <a href="#Navigation">Up to Top</a>
+  </footer>
+</html>
